@@ -1,8 +1,9 @@
 {
+  "id": "/AgroGerm-H-T/",
   "name": "AgroGerm·HT",
   "short_name": "AgroGerm",
   "description": "Simulador hidrotérmico de germinación y sistema de apoyo a la decisión agronómica",
-  "start_url": "./index.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
@@ -21,17 +22,17 @@
       "src": "./icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "shortcuts": [
-    {
-      "name": "Simulador",
-      "url": "./index.html"
-    },
-    {
-      "name": "Manual del docente",
-      "url": "./manual.html"
-    }
+    { "name": "Simulador", "url": "./" },
+    { "name": "Manual del docente", "url": "./manual.html" }
   ]
 }
