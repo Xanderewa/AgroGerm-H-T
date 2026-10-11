@@ -120,3 +120,90 @@ Visitá 👉 [**xanderewa.github.io/AgroGerm-H-T**](https://xanderewa.github.io/
 ---
 
 ## 📁 Estructura del repositorio
+
+---
+
+## 🧠 Modelo científico
+
+El motor de simulación combina:
+
+- **Función de distribución normal acumulada** para la curva sigmoidea de germinación
+- **Factores multiplicativos** que modulan la tasa de germinación:
+  - `f_T` — factor térmico (trapezoidal)
+  - `f_Ψ` — factor hídrico (lineal)
+  - `f_pH` — factor pH (cuadrático por tramos)
+  - `f_CE` — factor salino (lineal desde 2 dS/m)
+  - `f_P`, `f_N` — factores nutricionales
+- **Ψ osmótico** calculado desde CE: `Ψ_osm = -0.036 × CE`
+- **Corrección por profundidad** de siembra
+- **Ruido Perlin** para variabilidad espacial del lote
+- **Monte Carlo** con distribución Gamma para incertidumbre
+
+**Referencias metodológicas:** modelo hidrotérmico de Gummerson (1986), Bradford (2002), y parametrizaciones agronómicas adaptadas a condiciones subtropicales de Paraguay.
+
+---
+
+## 📖 El manual
+
+El archivo `manual.html` es un **libro completo** pensado para docentes, organizado en 4 partes:
+
+- **Parte I — Simulación**: teoría, valor didáctico, interfaz, motor científico
+- **Parte II — Modo Real**: clima real, suelos paraguayos, recomendación, economía, Monte Carlo
+- **Parte III — Tutoriales**: análisis en 10 minutos, clase con escenarios, reporte PDF
+- **Parte IV — Anexos**: los 46 cultivares, parámetros y rangos
+
+👉 [**Leer el manual completo**](https://xanderewa.github.io/AgroGerm-H-T/manual.html)
+
+---
+
+## 📜 Licencia
+
+Este proyecto está licenciado bajo **Creative Commons BY-NC-SA 4.0**.
+
+**Podés:**
+- ✅ Usarlo en tu aula sin pedir permiso
+- ✅ Adaptarlo, traducirlo o mejorarlo
+- ✅ Compartirlo con otros docentes
+
+**Siempre que:**
+- 📛 Menciones a **Agustín B.** como autor original
+- 🚫 **No lo uses con fines comerciales**
+- 🔁 Compartas las mejoras bajo la misma licencia
+
+Ver [LICENSE](LICENSE) para el texto completo.
+
+---
+
+## 👤 Autor
+
+**Agustín B.** — Paraguay 🇵🇾
+
+Proyecto educativo personal desarrollado sin fines de lucro, con el objetivo de aportar una herramienta didáctica abierta a la comunidad educativa agronómica.
+
+---
+
+## 🙏 Créditos
+
+- Datos climáticos: [Open-Meteo](https://open-meteo.com)
+- Iconografía: [Lucide Icons](https://lucide.dev)
+- Gráficos: [Chart.js](https://www.chartjs.org)
+- Empaquetado Android: [PWABuilder](https://pwabuilder.com)
+- Modelo hidrotérmico: basado en bibliografía clásica de fisiología de semillas
+
+---
+
+## 🤝 Contribuciones
+
+¿Sos docente y querés aportar mejoras, traducciones o nuevos casos de uso? Las contribuciones son bienvenidas.
+
+Abrí un [issue](https://github.com/Xanderewa/AgroGerm-H-T/issues) o un [pull request](https://github.com/Xanderewa/AgroGerm-H-T/pulls).
+
+---
+
+<div align="center">
+
+**🌱 Enseñar lo que no se ve, decidir con lo que sí.**
+
+© 2026 Agustín B. · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+</div>
