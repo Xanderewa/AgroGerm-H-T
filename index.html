@@ -5360,11 +5360,10 @@ else { init(); }
 </script>
   <script>
   if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js')
-        .then(reg => console.log('Service Worker registrado:', reg.scope))
-        .catch(err => console.warn('Error SW:', err));
-    });
+    // Registrar YA, sin esperar 'load' (los CDNs pueden tardar)
+    navigator.serviceWorker.register('./sw.js', { scope: './' })
+      .then(reg => console.log('✅ SW registrado:', reg.scope))
+      .catch(err => console.warn('❌ Error SW:', err));
   }
   </script>
 </body>
